@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden; 
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.container-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    overflow: hidden; 
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgb(2, 255, 2);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow:auto; 
+
+    max-height: calc(100vh - 40px);
+    max-width: 90vw; 
+
+}
+
+h1 {
+    margin-top: 0;
+    font-size: clamp(1.5rem, 1vw, 3rem); 
+    align-self: center;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin-right: 10px;
+
+}
+
+button {
+    padding: 10px 20px;
+    border: double;
+    border-color: white;
+    background: #5cb85c;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #4cae4c;
+    border-color: rgb(2, 255, 2);
+    border-style: double;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    max-height: 60vh; /* Set maximum height for the task list */
+    overflow-y: auto; /* Enable vertical scrolling when content exceeds max height */
+}
+
+ul li {
+    padding: 10px;
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap within the container */
+    word-wrap: break-word; /* Ensure long text breaks and wraps to next line */
+}
+
+ul li:hover {
+    background: rgb(210, 210, 210);
+}
+
+ul li span {
+    flex: 1;
+    max-width: 80%; /* Limit the width of the text to prevent overflow */
+    word-break: break-word; /* Ensure long words break to the next line */
+}
+
+ul li button {
+    background: #d9534f;
+    color: white;
+    border-style: double;
+    border-color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+ul li button:hover {
+    background: #c9302c;
+    border-color: rgb(255, 112, 112);
+}
+
